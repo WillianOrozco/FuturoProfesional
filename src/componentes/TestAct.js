@@ -43,14 +43,14 @@ export default class Main extends React.Component {
             <Pregunta preg={Pregunta3} />
             <div className="d-flex justify-content-between">
               <a
-                href="http://localhost:3000/Cuenta"
+                href="https://futuro-profesional.vercel.app/Cuenta"
                 type="submit"
                 class="btn btn-sm btn-success m-1"
               >
                 Cancel
               </a>
               <a
-                href="http://localhost:3000/Resultado"
+                href="https://futuro-profesional.vercel.app/Resultado"
                 type="submit"
                 class="btn btn-sm btn-success m-1"
               >

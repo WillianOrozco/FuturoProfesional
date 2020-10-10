@@ -30,11 +30,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="http://localhost:3000/Test"
+                href="https://futuro-profesional.vercel.app/Test"
               >
                 Nuevo Test
               </a>
-              <a href="http://localhost:3000/Test">
+              <a href="https://futuro-profesional.vercel.app/Test">
                 <img src={Flecha} alt="Avanzar" />
               </a>
             </div>
@@ -58,11 +58,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="http://localhost:3000/Resultados_Anteriores"
+                href="https://futuro-profesional.vercel.app/Resultados_Anteriores"
               >
                 Resultados Anteriores
               </a>
-              <a href="http://localhost:3000/Resultados_Anteriores">
+              <a href="https://futuro-profesional.vercel.app/Resultados_Anteriores">
                 <img src={Flecha} alt="Avanzar" />
               </a>
             </div>
@@ -86,11 +86,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="http://localhost:3000/InfoCuenta"
+                href="https://futuro-profesional.vercel.app/InfoCuenta"
               >
                 Información de la Cuenta
               </a>
-              <a href="http://localhost:3000/InfoCuenta">
+              <a href="https://futuro-profesional.vercel.app/InfoCuenta">
                 <img src={Flecha} alt="Avanzar" />
               </a>
             </div>
@@ -113,11 +113,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="http://localhost:3000/Configuración"
+                href="https://futuro-profesional.vercel.app/Configuración"
               >
                 Configuración
               </a>
-              <a href="http://localhost:3000/Configuración">
+              <a href="https://futuro-profesional.vercel.app/Configuración">
                 <img src={Flecha} alt="Avanzar" />
               </a>
             </div>

@@ -10,7 +10,7 @@ export default class Header extends React.Component {
             <div class="fixed-top">
               <nav className="navbar navbar-dark bg-dark justify-content-between">
                 <div className="contenedorLogo">
-                  <a href="http://localhost:3000/">
+                  <a href="https://futuro-profesional.vercel.app/">
                     <img
                       src={Logo}
                       className="img-fluid"

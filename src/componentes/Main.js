@@ -79,7 +79,7 @@ export default class Main extends React.Component {
                       ¿Olvidaste tu contraseña?
                     </a>
                     <a
-                      href="http://localhost:3000/Cuenta"
+                      href="https://futuro-profesional.vercel.app/Cuenta"
                       type="submit"
                       class="btn btn-sm btn-success m-1"
                     >

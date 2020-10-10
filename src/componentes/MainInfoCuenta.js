@@ -12,7 +12,7 @@ export default class Main extends React.Component {
         <div className="row">
           <div className="col my-5 py-5">
             <nav class="navbar p-0 w-100 bg-transparent">
-              <a href="http://localhost:3000/Cuenta">
+              <a href="https://futuro-profesional.vercel.app/Cuenta">
                 <img src={FlechaAtras} width="30" alt="Atrás" />
               </a>
               <h5 className="text-center text-white py-2"> Información de la Cuenta </h5>

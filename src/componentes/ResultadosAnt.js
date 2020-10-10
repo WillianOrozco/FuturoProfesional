@@ -11,7 +11,7 @@ export default class ResultadosAnt extends React.Component {
         <div className="row">
           <div className="col my-5 py-5">
             <nav class="navbar p-0 w-100 bg-transparent">
-              <a href="http://localhost:3000/Cuenta">
+              <a href="https://futuro-profesional.vercel.app/Cuenta">
                 <img src={FlechaAtras} width="30" alt="Atrás" />
               </a>
               <h5 className="text-center text-white py-2">
@@ -33,7 +33,7 @@ export default class ResultadosAnt extends React.Component {
                 <div className="d-flex justify-content-between border-bottom">
                     <h6 className="m-2">Test #1</h6>
                     <p className="m-2">05/08/2020</p>
-                    <a href="http://localhost:3000/Resultados_Anteriores/Test_1" className="m-1"><img src={Flecha} width="30" alt="Avanzar" /></a>
+                    <a href="https://futuro-profesional.vercel.app/Resultados_Anteriores/Test_1" className="m-1"><img src={Flecha} width="30" alt="Avanzar" /></a>
                 </div>
                 <div className="text-center pt-2">
                   No has realizado ningún otro Test.
