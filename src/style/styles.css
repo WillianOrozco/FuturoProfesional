@@ -1,0 +1,19 @@
+body {
+  background: url("../imagenes/FondoP.jpg");
+}
+
+.contenedorLogo {
+  max-width: 265px;
+}
+
+.recuperarContraseña {
+  font-size: 13px;
+}
+
+.tamañoMaximo {
+  max-width: 700px;
+}
+
+.colorAlerta{
+  color: rgb(17, 175, 64);
+}
