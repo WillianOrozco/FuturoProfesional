@@ -8,7 +8,7 @@ import Datos from "../server/Test.json";
 export default function Test() {
   return (
     <div>
-      <Header boton="Cerrar Sesión" link="http://localhost:3000/" />
+      <Header boton="Cerrar Sesión" link="https://futuro-profesional.vercel.app/" />
       <TestAct />
       <Footer />
     </div>

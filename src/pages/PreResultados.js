@@ -7,7 +7,7 @@ import Footer from "../componentes/Footer";
 export default function PreResultados() {
   return (
     <div>
-      <Header boton="Cerrar Sesión" link="http://localhost:3000/" />
+      <Header boton="Cerrar Sesión" link="https://futuro-profesional.vercel.app/" />
       <ResultadosAnt />
       <Footer />
     </div>

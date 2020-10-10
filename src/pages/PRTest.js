@@ -8,7 +8,7 @@ import Datos from "../server/Test.json";
 export default function PRTest() {
   return (
     <div>
-      <Header boton="Cerrar Sesión" link="http://localhost:3000/" />
+      <Header boton="Cerrar Sesión" link="https://futuro-profesional.vercel.app/" />
       <TestAnt dts={Datos} />
       <Footer />
     </div>
