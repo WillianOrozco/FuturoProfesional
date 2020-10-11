@@ -86,7 +86,7 @@ export default class MainRegistro extends React.Component {
                     />
                   </a>
                 </div>
-                <a href="https://futuro-profesional.vercel.app/" type="submit" class="btn btn-sm btn-success m-1">
+                <a href="https://futuroprofesional.vercel.app/" type="submit" class="btn btn-sm btn-success m-1">
                   Submit
                 </a>
               </div>

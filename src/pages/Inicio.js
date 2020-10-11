@@ -8,7 +8,7 @@ import Footer from "../componentes/Footer";
 export default function Inicio() {
   return (
     <div>
-      <Header boton="Regístrate" link="https://futuro-profesional.vercel.app/Registro" />
+      <Header boton="Regístrate" link="https://futuroprofesional.vercel.app/Registro" />
       <Main />
       <Footer />
     </div>

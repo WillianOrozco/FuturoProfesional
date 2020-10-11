@@ -8,7 +8,7 @@ import Datos from "../server/Test.json";
 export default function PreResultados() {
   return (
     <div>
-      <Header boton="Cerrar Sesión" link="https://futuro-profesional.vercel.app/" />
+      <Header boton="Cerrar Sesión" link="https://futuroprofesional.vercel.app/" />
       <ResultadoAct dts={Datos} />
       <Footer />
     </div>

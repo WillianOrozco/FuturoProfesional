@@ -7,7 +7,7 @@ import Footer from "../componentes/Footer";
 export default function Cuenta() {
   return (
     <div>
-      <Header boton="Cerrar Sesión" link="https://futuro-profesional.vercel.app/" />
+      <Header boton="Cerrar Sesión" link="https://futuroprofesional.vercel.app/" />
       <MainCuenta />
       <Footer />
     </div>

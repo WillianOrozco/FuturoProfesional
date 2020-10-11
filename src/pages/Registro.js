@@ -7,7 +7,7 @@ import Footer from "../componentes/Footer";
 export default function Registro() {
   return (
     <div>
-      <Header boton="Ingresa" link="https://futuro-profesional.vercel.app/" />
+      <Header boton="Ingresa" link="https://futuroprofesional.vercel.app/" />
       <MainRegistro />
       <Footer />
     </div>
