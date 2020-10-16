@@ -1,5 +1,19 @@
+
+.logo{
+  margin-top: -2px;
+    margin-left: 20px;
+    max-height: 40px;
+}
+
+  .nav-item{
+    list-style: none;
+    display: inline;
+  
+  }
+
 body {
   background: url("../imagenes/FondoP.jpg");
+  
 }
 
 .contenedorLogo {
@@ -17,3 +31,13 @@ body {
 .colorAlerta{
   color: rgb(17, 175, 64);
 }
+
+#TextNav {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+
+

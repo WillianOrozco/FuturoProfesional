@@ -3,6 +3,7 @@ import Foto from "../imagenes/FotoPerfil.jpg";
 import Info from "../imagenes/Info.png";
 import Flecha from "../imagenes/Flecha.png";
 
+
 export default class MainCuenta extends React.Component {
   render() {
     return (
