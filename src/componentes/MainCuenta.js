@@ -26,7 +26,7 @@ export default class MainCuenta extends React.Component {
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <img src={Info} alt="info" />
+                <img src={Info} alt="info" width="40" />
               </a>
               <a
                 className="text-white text-decoration-none"
@@ -54,7 +54,7 @@ export default class MainCuenta extends React.Component {
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <img src={Info} alt="info" />
+                <img src={Info} alt="info" width="40" />
               </a>
               <a
                 className="text-white text-decoration-none"
@@ -82,7 +82,7 @@ export default class MainCuenta extends React.Component {
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <img src={Info} alt="info" />
+                <img src={Info} alt="info" width="40" />
               </a>
               <a
                 className="text-white text-decoration-none"
@@ -109,7 +109,7 @@ export default class MainCuenta extends React.Component {
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <img src={Info} alt="info" />
+                <img src={Info} alt="info" width="40" />
               </a>
               <a
                 className="text-white text-decoration-none"
