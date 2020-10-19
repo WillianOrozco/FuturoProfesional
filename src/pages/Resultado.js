@@ -10,7 +10,6 @@ export default function PreResultados() {
     <div>
       <Header boton="Cerrar Sesión" link="https://futuroprofesional.vercel.app/" />
       <ResultadoAct dts={Datos} />
-      <Footer />
     </div>
   );
 }

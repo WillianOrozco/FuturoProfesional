@@ -9,7 +9,6 @@ export default function InfoCuenta() {
     <div>
       <Header boton="Cerrar Sesión" link="https://futuroprofesional.vercel.app/" />
       <MainInfoCuenta />
-      <Footer />
     </div>
   );
 }

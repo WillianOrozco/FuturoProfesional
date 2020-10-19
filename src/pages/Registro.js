@@ -9,7 +9,6 @@ export default function Registro() {
     <div>
       <Header boton="Ingresa" link="https://futuroprofesional.vercel.app/" />
       <MainRegistro />
-      <Footer />
     </div>
   );
 }

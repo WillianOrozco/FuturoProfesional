@@ -1,15 +1,14 @@
 import React from "react";
 import "../style/styles.css";
 import Header from "../componentes/Header";
-import TestAnt from "../componentes/TestAnt";
+import Creditos from "../componentes/Creditos";
 import Footer from "../componentes/Footer";
-import Datos from "../server/Test.json";
 
-export default function PRTest() {
+export default function Cuenta() {
   return (
     <div>
       <Header boton="Cerrar Sesión" link="https://futuroprofesional.vercel.app/" />
-      <TestAnt dts={Datos} />
+      <Creditos />
     </div>
   );
 }

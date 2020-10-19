@@ -13,6 +13,7 @@ import PRTest from "../pages/PRTest";
 import Test from "../pages/Test";
 import Resultado from "../pages/Resultado";
 import Configuración from "../pages/Configuración";
+import CreditosPage from "../pages/CreditosPage";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route exact path="/Test" component={Test} />
         <Route exact path="/Resultado" component={Resultado} />
         <Route exact path="/Configuración" component={Configuración} />
+        <Route exact path="/CreditosPage" component={CreditosPage} />
       </Switch>
     </BrowserRouter>
   );
