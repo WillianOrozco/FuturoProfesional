@@ -1,0 +1,31 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿De los siguientes pasatiempos cual elegirías?",
+      "opcion1": "Jugar videojuegos en mi PC o Play Station",
+      "opcion2": "Explorar algún lugar con naturaleza",
+      "opcion3": "Leer cualquier tipo de artículo de mi gusto",
+      "opcion4": "Juegos de mesa o que requieran pensamiento",
+      "grupo": "Pregunta1"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Como te consideras??",
+      "opcion1": "Sociable",
+      "opcion2": "Solitario",
+      "opcion3": "Me da igual",
+      "opcion4": "Un poco de ambas",
+      "grupo": "Pregunta2"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Lees con frecuencia?",
+      "opcion1": "Muy seguido",
+      "opcion2": "A veces",
+      "opcion3": "Solo cuando debo hacerlo",
+      "opcion4": "Nunca",
+      "grupo": "Pregunta3"
+    }
+  ]
+}
