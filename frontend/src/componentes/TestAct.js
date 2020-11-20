@@ -16,7 +16,7 @@ export default class Main extends React.Component {
               Si deseas cancelar este test, dirígete al boton de cancelar al
               final de la pantalla.
             </p>
-            {pr.preguntas.map(x=><div><Pregunta preg={x} /></div>)}
+            {pr.preguntas.map(x=><div key={x.id} ><Pregunta preg={x} /></div>)}
             
             <div className="d-flex justify-content-between">
               <a

@@ -44,3 +44,9 @@
 .tamañoConfiguracion{
   min-height: 650px;
 }
+
+#Mensaje{
+  display: none;
+  color: rgb(255, 31, 31);
+  font-size: 15px;
+}

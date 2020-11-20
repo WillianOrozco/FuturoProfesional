@@ -3,11 +3,16 @@ import Foto from "../imagenes/FotoPerfil.jpg";
 import Flecha from "../imagenes/Flecha.png";
 import FlechaAtras from "../imagenes/FlechaAtras.png";
 import Info from "../imagenes/Info.png";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
+
 
 export default class ResultadosAnt extends React.Component {
   render() {
+    var nombre = cookies.get("nombre")+" "+cookies.get("apellido");
     return (
-      <div className="container-fluid">
+      <div className="container-fluid tamañoConfiguracion">
         <div className="row">
           <div className="col my-5 py-5">
             <nav className="navbar p-0 w-100 bg-transparent">
@@ -27,7 +32,7 @@ export default class ResultadosAnt extends React.Component {
                 width="150"
               />
             </div>
-            <h5 className="text-center text-white mb-5">Willian Orozco</h5>
+            <h5 className="text-center text-white mb-5">{nombre}</h5>
             <div className="container">
               <div className="text-white p-3 border rounded">
                 <div className="d-flex justify-content-between border-bottom">

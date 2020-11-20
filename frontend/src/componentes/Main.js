@@ -6,7 +6,8 @@ import md5 from "md5";
 import axios from "axios";
 import Cookies from "universal-cookie";
 
-const url = "http://localhost:3001/usuarios";
+const urlUsuario = "https://ftp-backend.herokuapp.com/usuarios";
+const urlTest = "https://ftp-backend.herokuapp.com/tests";
 const cookies = new Cookies();
 
 export default class Main extends React.Component {
@@ -37,28 +38,53 @@ export default class Main extends React.Component {
   ingresarUsuario = async () => {
     const user = this.state.user;
     await axios
-      .get(url, { params: {usuario: user.usuario, contraseña: md5(user.contraseña)} })
-      .then((res)=>{
+      .get(urlUsuario, {
+        params: { usuario: user.usuario, contraseña: md5(user.contraseña) },
+      })
+      .then((res) => {
         return res.data;
       })
       .then((res) => {
         if (res.length > 0) {
           var respuesta = res[0];
-          cookies.set("id", respuesta.id, {path: "/"});
-          cookies.set("nombre", respuesta.nombre, {path: "/"});
-          cookies.set("apellido", respuesta.apellido, {path: "/"});
-          cookies.set("usuario", respuesta.usuario, {path: "/"});
-          cookies.set("correo", respuesta.correo, {path: "/"});
-          cookies.set("contraseña", respuesta.contraseña, {path: "/"});
+          cookies.set("id", respuesta.id, { path: "/" });
+          cookies.set("nombre", respuesta.nombre, { path: "/" });
+          cookies.set("apellido", respuesta.apellido, { path: "/" });
+          cookies.set("usuario", respuesta.usuario, { path: "/" });
+          cookies.set("correo", respuesta.correo, { path: "/" });
+          cookies.set("contraseña", respuesta.contraseña, { path: "/" });
+          document.getElementById("Mensaje").style.display = "none";
           window.location.href = "./Cuenta";
         } else {
-          alert("El usuario o contraseña son incorrectos");
+          document.getElementById("Mensaje").style.display = "block";
+          document.getElementsByName("contraseña").value = "";
         }
       })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  obtenerDatos = async () => {
+    await axios
+      .get(urlTest, {params: {id_usuario: cookies.get("id")}})
+      .then((res) => {
+        return res.data;
+      })
+      .then((res) => {
+        if(res.length>0){
+          var resp = res[0];
+          cookies.set("id_test", resp.id, { path: "/" });
+          cookies.set("descripcion", resp.descripcion, { path: "/" });
+          cookies.set("profesion", resp.profesion, { path: "/" });
+          cookies.set("carreras", resp.carreras, { path: "/" });
+        }
+          
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   render() {
     return (
@@ -85,7 +111,7 @@ export default class Main extends React.Component {
                     placeholder="Usuario"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group mb-1">
                   <label htmlFor="exampleInputPassword1">Contraseña</label>
                   <input
                     type="password"
@@ -95,7 +121,10 @@ export default class Main extends React.Component {
                     className="form-control"
                   />
                 </div>
-                <div className="d-flex justify-content-between">
+                <div>
+                  <p id="Mensaje">Usuario o contraseña incorrectos</p>
+                </div>
+                <div className="d-flex justify-content-between pt-2">
                   <div className="">
                     <div className="d-flex jusify-content-start">
                       <a href="#twit">
@@ -139,7 +168,9 @@ export default class Main extends React.Component {
                     </a>
                     <button
                       type="submit"
-                      onClick={() => this.ingresarUsuario()}
+                      onClick={() => {
+                        this.ingresarUsuario()
+                        this.obtenerDatos()}}
                       className="btn btn-sm btn-success m-1"
                     >
                       Submit
@@ -156,7 +187,7 @@ export default class Main extends React.Component {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="ejemplo@gmail.com"
+                    placeholder="Andres Gómez"
                   />
                 </div>
                 <div className="form-group">
