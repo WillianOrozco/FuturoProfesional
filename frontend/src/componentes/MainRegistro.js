@@ -4,8 +4,9 @@ import Facebook from "../imagenes/Facebook.png";
 import Google from "../imagenes/Google.png";
 import Twitter from "../imagenes/Twitter.png";
 import md5 from "md5";
+import { error } from "jquery";
 
-const url ="http://localhost:3001/usuarios";
+const url = "https://ftp-backend.herokuapp.com/usuarios";
 
 export default class MainRegistro extends React.Component {
   constructor() {
@@ -17,6 +18,7 @@ export default class MainRegistro extends React.Component {
         correo: "",
         usuario: "",
         contraseña: "",
+        ccontraseña: "",
       },
     };
   }
@@ -28,16 +30,52 @@ export default class MainRegistro extends React.Component {
         [e.target.name]: e.target.value,
       },
     });
-    console.log(this.state.user);
   };
 
   handleSubmit(e) {
     e.preventDefault();
   }
 
-  crearUsuario=async()=>{
+  verificarUsuario = () => {
+    var user = this.state.user;
+    var nombre = user.nombre;
+    var apellido = user.apellido;
+    var email = user.correo;
+    var usuario = user.usuario;
+    var contraseña = user.contraseña;
+    var ccontraseña = user.ccontraseña;
+    if (
+      nombre == "" ||
+      apellido == "" ||
+      email == "" ||
+      usuario == "" ||
+      contraseña == "" ||
+      ccontraseña == ""
+    ) {
+      document.getElementById("Mensaje1").style.display = "block";
+    } else {
+      axios
+        .get(url, { params: { correo: email } })
+        .then((res) => {
+          return res.data;
+        })
+        .then((res) => {
+          if (res.length > 0) {
+            document.getElementById("Mensaje2").style.display = "block";
+          } else {
+            document.getElementById("Mensaje2").style.display = "none";
+            this.crearUsuario();
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  };
+
+  crearUsuario = async () => {
     const user = this.state.user;
-    axios
+    await axios
       .post(url, {
         nombre: user.nombre,
         apellido: user.apellido,
@@ -45,26 +83,25 @@ export default class MainRegistro extends React.Component {
         usuario: user.usuario,
         contraseña: md5(user.contraseña),
       })
-      .then((res) => {
-        alert(res)
-        window.location.href="./"
+      .then(() => {
+        window.location.href = "https://futuroprofesional.vercel.app/";
       })
       .catch((error) => {
         console.log(error);
       });
-  }
+  };
 
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
           <div className="col my-5 py-5">
-            <form className="container tamañoMaximo py-3 bg-dark rounded text-white">
+            <div className="container tamañoMaximo py-3 bg-dark rounded text-white">
               <h4 className="text-center pb-3 w-100 border-bottom">
                 Regístrate Ya!
               </h4>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Nombre</label>
+                <label>Nombre</label>
                 <input
                   type="text"
                   value={this.state.nombre}
@@ -75,7 +112,7 @@ export default class MainRegistro extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Apellido</label>
+                <label>Apellido</label>
                 <input
                   type="text"
                   value={this.state.apellido}
@@ -86,7 +123,7 @@ export default class MainRegistro extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Usuario</label>
+                <label>Usuario</label>
                 <input
                   type="text"
                   value={this.state.usuario}
@@ -97,7 +134,7 @@ export default class MainRegistro extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Correo Electrónico</label>
+                <label>Correo Electrónico</label>
                 <input
                   type="email"
                   value={this.state.correo}
@@ -108,7 +145,7 @@ export default class MainRegistro extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputPassword1">Contraseña</label>
+                <label>Contraseña</label>
                 <input
                   type="password"
                   value={this.state.contraseña}
@@ -118,14 +155,24 @@ export default class MainRegistro extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputPassword1">
-                  Confirmar Contraseña
-                </label>
+                <label>Confirmar Contraseña</label>
                 <input
                   type="password"
+                  value={this.state.ccontraseña}
+                  onChange={this.handleChange}
                   className="form-control"
-                  id="CPassword"
+                  name="ccontraseña"
                 />
+              </div>
+              <div>
+                <p id="Mensaje1" className="mensajeOculto">
+                  Debes llenar todos los campos
+                </p>
+              </div>
+              <div>
+                <p id="Mensaje2" className="mensajeOculto">
+                  El correo ingresado ya existe
+                </p>
               </div>
               <div className="d-flex justify-content-between">
                 <div className="">
@@ -154,11 +201,15 @@ export default class MainRegistro extends React.Component {
                     />
                   </a>
                 </div>
-                <button onClick={()=> this.crearUsuario()} type="submit" className="btn btn-sm btn-success m-1">
+                <button
+                  onClick={() => this.verificarUsuario()}
+                  type="submit"
+                  className="btn btn-sm btn-success m-1"
+                >
                   Submit
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

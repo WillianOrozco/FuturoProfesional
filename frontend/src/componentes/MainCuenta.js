@@ -34,11 +34,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="./Test"
+                href="https://futuroprofesional.vercel.app/Test"
               >
                 Nuevo Test
               </a>
-              <a href="./Test">
+              <a href="https://futuroprofesional.vercel.app/Test">
                 <img src={Flecha} alt="Avanzar" width="38" />
               </a>
             </div>
@@ -62,11 +62,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="./Resultados_Anteriores"
+                href="https://futuroprofesional.vercel.app/Resultados_Anteriores"
               >
                 Resultados Anteriores
               </a>
-              <a href="./Resultados_Anteriores">
+              <a href="https://futuroprofesional.vercel.app/Resultados_Anteriores">
                 <img src={Flecha} alt="Avanzar" width="38" />
               </a>
             </div>
@@ -90,11 +90,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="./InfoCuenta"
+                href="https://futuroprofesional.vercel.app/InfoCuenta"
               >
                 Información de la Cuenta
               </a>
-              <a href="./InfoCuenta">
+              <a href="https://futuroprofesional.vercel.app/InfoCuenta">
                 <img src={Flecha} alt="Avanzar" width="38" />
               </a>
             </div>
@@ -117,11 +117,11 @@ export default class MainCuenta extends React.Component {
               </a>
               <a
                 className="text-white text-decoration-none"
-                href="./Configuración"
+                href="https://futuroprofesional.vercel.app/Configuración"
               >
                 Configuración
               </a>
-              <a href="./Configuración">
+              <a href="https://futuroprofesional.vercel.app/Configuración">
                 <img src={Flecha} alt="Avanzar" width="38" />
               </a>
             </div>

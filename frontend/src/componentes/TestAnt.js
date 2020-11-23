@@ -2,20 +2,23 @@ import React from "react";
 import Foto from "../imagenes/FotoPerfil.jpg";
 import FlechaAtras from "../imagenes/FlechaAtras.png";
 import Info from "../imagenes/Info.png";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
+var nombre = cookies.get("nombre")+" "+cookies.get("apellido");
 
 export default class ResultadosAnt extends React.Component {
   render() {
-    const { dts } = this.props;
     return (
       <div className="container-fluid">
         <div className="row">
           <div className="col my-5 py-5">
             <nav className="navbar p-0 w-100 bg-transparent">
-              <a href="./Resultados_Anteriores">
+              <a href="https://futuroprofesional.vercel.app/">
                 <img src={FlechaAtras} width="38" alt="Atrás" />
               </a>
               <h5 className="text-center text-white py-2">
-                Test #{dts.map((x) => x.Test)}
+                Test #{cookies.get("id_test")}
               </h5>
               <img src={Info} width="35" alt="Info" />
             </nav>
@@ -27,7 +30,7 @@ export default class ResultadosAnt extends React.Component {
                 width="150"
               />
             </div>
-            <h5 className="text-center text-white mb-5">Willian Orozco</h5>
+            <h5 className="text-center text-white mb-5">{nombre}</h5>
             <div className="container">
               <div className="text-white p-3 border rounded">
                 <nav aria-label="Page navigation example">
@@ -57,12 +60,14 @@ export default class ResultadosAnt extends React.Component {
                   </ul>
                 </nav>
                 <div className="collapse show multi-collapse">
-                  {dts.map((x) => x.Descriptivo)}
+                  {cookies.get("Desc")}
                 </div>
                 <div className="collapse multi-collapse">
-                  {dts.map(x => x.Profesional)}
-                  <br />
-                  {dts.map(x => x.Carreras)}
+                  <p>
+                    Con base en los resultados de tu test, hemos concluido que
+                    te pueden gustar las siguientes profesiones:
+                  </p>
+                  {cookies.get("Prof")}
                 </div>
               </div>
             </div>

@@ -2,30 +2,253 @@
   "preguntas": [
     {
       "id": 1,
-      "pregunta": "¿De los siguientes pasatiempos cual elegirías?",
-      "opcion1": "Jugar videojuegos en mi PC o Play Station",
-      "opcion2": "Explorar algún lugar con naturaleza",
-      "opcion3": "Leer cualquier tipo de artículo de mi gusto",
-      "opcion4": "Juegos de mesa o que requieran pensamiento",
+      "pregunta": "Si pudiera tener una actividad extra durante las tardes, elegiría:",
+      "opcA": "Finanzas personales",
+      "opcB": "Tecnología de los robots",
+      "opcC": "Auxilios médicos",
+      "opcD": "Reciclaje",
+      "opcE": "Piano o guitarra",
       "grupo": "Pregunta1"
     },
     {
       "id": 2,
-      "pregunta": "¿Como te consideras??",
-      "opcion1": "Sociable",
-      "opcion2": "Solitario",
-      "opcion3": "Me da igual",
-      "opcion4": "Un poco de ambas",
+      "pregunta": "Mi asignatura escolar favorita es:",
+      "opcA": "Español, geografía y ciencias sociales",
+      "opcB": "Física y matemáticas",
+      "opcC": "Filosofía, historia o ética",
+      "opcD": "Biología y química",
+      "opcE": "Actividades artísticas",
       "grupo": "Pregunta2"
     },
     {
       "id": 3,
-      "pregunta": "¿Lees con frecuencia?",
-      "opcion1": "Muy seguido",
-      "opcion2": "A veces",
-      "opcion3": "Solo cuando debo hacerlo",
-      "opcion4": "Nunca",
+      "pregunta": "Le tengo admiración a:",
+      "opcA": "Los emprendedores convertidos en grandes empresarios",
+      "opcB": "Los fundadores de redes para comunicaciones digitales",
+      "opcC": "Enfermeras y doctores",
+      "opcD": "Los creadores de nuevos medicamentos",
+      "opcE": "Artistas en diversas gamas (actrices, cantantes, etc.)",
       "grupo": "Pregunta3"
+    },
+    {
+      "id": 4,
+      "pregunta": "Si fuera auxiliar de alguna persona, sería:",
+      "opcA": "Político",
+      "opcB": "Ingeniero o arquitecto",
+      "opcC": "Maestro",
+      "opcD": "Científico marino",
+      "opcE": "Dibujante",
+      "grupo": "Pregunta4"
+    },
+    {
+      "id": 5,
+      "pregunta": "Si estoy viendo la televisión, me gustan los programas de:",
+      "opcA": "Noticias actuales sobre economía y política",
+      "opcB": "Avances tecnológicos recientes",
+      "opcC": "Problemáticas de personas para darles solución",
+      "opcD": "Documentales sobre plantas y animales",
+      "opcE": "Caricaturas y videos",
+      "grupo": "Pregunta5"
+    },
+    {
+      "id": 6,
+      "pregunta": "Laborando en un futuro, me visualizo:",
+      "opcA": "Laborando con fórmulas y cantidades numéricas",
+      "opcB": "Laborando con maquinaria y diversos materiales",
+      "opcC": "Laborando con personas",
+      "opcD": "Laborando con pequeños organismos y diversas sustancias",
+      "opcE": "Laborando con pinturas e instrumentos musicales",
+      "grupo": "Pregunta6"
+    },
+    {
+      "id": 7,
+      "pregunta": "Alguien que podría tener mi admiración y respeto sería alguien que:",
+      "opcA": "Es encargado de la logística que un equipo va a llevar a cabo",
+      "opcB": "Es creador de un producto que sea de utilidad para la vida cotidiana",
+      "opcC": "Es una persona que ofrece su tiempo para ayudar y servir a otros",
+      "opcD": "Es capaz de estudiar a los seres vivos y su naturaleza",
+      "opcE": "Es creador de obras musicales y artísticas que inspiran su entorno.",
+      "grupo": "Pregunta7"
+    },
+    {
+      "id": 8,
+      "pregunta": "Si llego a tener un evento, mis tareas a realizar son:",
+      "opcA": "Dirigiendo al personal, cotizando presupuestos y recabando el dinero",
+      "opcB": "Revisando el funcionamiento adecuado del equipo de sonido",
+      "opcC": "Atendiendo a los invitados del evento",
+      "opcD": "Hacer un estudio de las instalaciones para su uso y limpieza adecuada",
+      "opcE": "Preparar el diseño ambiental del lugar del evento y el diseño de las propagandas",
+      "grupo": "Pregunta8"
+    },
+    {
+      "id": 9,
+      "pregunta": "Si se iniciara un nuevo negocio, mi aportación sería:",
+      "opcA": "Llevar a cabo la contabilidad",
+      "opcB": "Llevar la supervisión de las tecnologías que se requieren",
+      "opcC": "Darles una cálida bienvenida a los clientes",
+      "opcD": "Revisar que la calidad de los alimentos sea excelente",
+      "opcE": "Llevar a cabo el diseño ambiental y la imagen tanto interna como externa del local",
+      "grupo": "Pregunta9"
+    },
+    {
+      "id": 10,
+      "pregunta": "Si leo un libro o una revista, trata de:",
+      "opcA": "Política, derecho y economía",
+      "opcB": "Herramientas, instrumentos y tecnología",
+      "opcC": "Sociología, humanidades y psicología",
+      "opcD": "Funciones del cuerpo y cerebro humano",
+      "opcE": "Danza, diseño, pintura, escultura",
+      "grupo": "Pregunta10"
+    },
+    {
+      "id": 11,
+      "pregunta": "Si laborara para una gran empresa, me sería grato el departamento de:",
+      "opcA": "Administración y contabilidad",
+      "opcB": "Investigaciones",
+      "opcC": "Recursos humanos",
+      "opcD": "Higiene y salud",
+      "opcE": "Diseño ambiental y de muebles",
+      "grupo": "Pregunta11"
+    },
+    {
+      "id": 12,
+      "pregunta": "Si tuviera una plática interesante sería con:",
+      "opcA": "El presidente",
+      "opcB": "Ingeniero de un edificio inteligente",
+      "opcC": "Reportero de noticias",
+      "opcD": "Médico de un hospital que se encuentra en urgencias",
+      "opcE": "Fotógrafo de una revista",
+      "grupo": "Pregunta12"
+    },
+    {
+      "id": 13,
+      "pregunta": "Si alguien visitara mi habitación encontraría:",
+      "opcA": "Cosas que he comprado con mis ingresos",
+      "opcB": "Aparatos electrónicos y de alta tecnología",
+      "opcC": "Recuerdos que tienen gran valor sentimental",
+      "opcD": "Un pez, una planta y algunos suvenires de lugares que he visitado",
+      "opcE": "Fotografías, cuadros y carteles con imágenes llamativas",
+      "grupo": "Pregunta13"
+    },
+    {
+      "id": 14,
+      "pregunta": "Cuando voy a una exposición, la que me llama la atención trata de:",
+      "opcA": "Debates políticos y economía",
+      "opcB": "Alta tecnología e inventos científicos innovadores",
+      "opcC": "Metodologías educativas, librerías y centros de idiomas",
+      "opcD": "Fauna y flora de animales exóticos y desconocidos",
+      "opcE": "Artes, música y pintura",
+      "grupo": "Pregunta14"
+    },
+    {
+      "id": 15,
+      "pregunta": "Me sentiría plano y feliz si pudiera:",
+      "opcA": "Emprender un negocio que haga altos niveles de ganancias",
+      "opcB": "Formar parte del equipo que emprenda una construcción moderna",
+      "opcC": "Descubrir la cura para padecimientos y enfermedades de nuestra actualidad",
+      "opcD": "Ser el creador de nuevas especies tanto de animales como de plantas",
+      "opcE": "Ser un bailarín profesional y un gran artista",
+      "grupo": "Pregunta15"
+    },
+    {
+      "id": 16,
+      "pregunta": "Si fuera de visita a algún lugar sería:",
+      "opcA": "La casa de bolsa",
+      "opcB": "Una planta automotriz",
+      "opcC": "Una institución de educación especial",
+      "opcD": "Una gran laboratorio de experimentos para vacunas",
+      "opcE": "Un estudio de grabación y video",
+      "grupo": "Pregunta16"
+    },
+    {
+      "id": 17,
+      "pregunta": "Si hablo de algún tema, hablaría de:",
+      "opcA": "Economía en el país",
+      "opcB": "Altas tecnologías",
+      "opcC": "Tipos de terapias psicológicas",
+      "opcD": "Nuevos descubrimientos del ADN",
+      "opcE": "Afinidad por la música y el arte",
+      "grupo": "Pregunta17"
+    },
+    {
+      "id": 18,
+      "pregunta": "En mi tiempo libre me gusta:",
+      "opcA": "Crear reuniones o eventos",
+      "opcB": "Conocer sobre algún tipo de software nuevo",
+      "opcC": "Ayudar a que terminen pronto su tarea mis sobrinos o hermanos pequeños",
+      "opcD": "Ir de visita a algún zoológico o jardín",
+      "opcE": "Tocar algún instrumento o practicar alguna danza",
+      "grupo": "Pregunta18"
+    },
+    {
+      "id": 19,
+      "pregunta": "Si fuera reconocido sería por:",
+      "opcA": "Mi capacidad para concluir negocios",
+      "opcB": "Mis aportaciones a la tecnología",
+      "opcC": "Implementar un programa que mejore la calidad de vida de la gente de pocos recursos",
+      "opcD": "Mis descubrimientos médicos",
+      "opcE": "Mis obras musicales o esculturas",
+      "grupo": "Pregunta19"
+    },
+    {
+      "id": 20,
+      "pregunta": "Si me imagino algo, es sobre:",
+      "opcA": "Cómo hacer dinero",
+      "opcB": "Cómo serán las casas del 2040",
+      "opcC": "Cómo ayudar a resolver problemas personales",
+      "opcD": "Cómo podría hacer un viaje de campamento",
+      "opcE": "Cómo hacer animaciones digitales y de video",
+      "grupo": "Pregunta20"
+    },
+    {
+      "id": 21,
+      "pregunta": "Sentiría orgullo si fuera un:",
+      "opcA": "Político modelo",
+      "opcB": "Gran arquitecto",
+      "opcC": "Benefactor reconocido",
+      "opcD": "Científico renombrado",
+      "opcE": "Artista famoso",
+      "grupo": "Pregunta21"
+    },
+    {
+      "id": 22,
+      "pregunta": "Si trabajara medio tiempo, trabajaría en:",
+      "opcA": "Un despacho",
+      "opcB": "Una fábrica",
+      "opcC": "Un colegio",
+      "opcD": "En las montañas",
+      "opcE": "En el teatro",
+      "grupo": "Pregunta22"
+    },
+    {
+      "id": 23,
+      "pregunta": "Si aprendo algo nuevo, lo recuerdo:",
+      "opcA": "Si lo organizo con gráficas y esquemas",
+      "opcB": "Si trato de tocar objetos",
+      "opcC": "Si hablo respecto al tema con varias personas",
+      "opcD": "Si realizo un análisis profundo de toda la información",
+      "opcE": "Si utilizo sonidos y movimientos",
+      "grupo": "Pregunta23"
+    },
+    {
+      "id": 24,
+      "pregunta": "Casi siempre estoy:",
+      "opcA": "Organizando las reuniones y fiestas",
+      "opcB": "Reparando algún aparato electrónico",
+      "opcC": "Ayudando a la gente a que resuelvan situaciones personales",
+      "opcD": "Procurando el bienestar de un animal o una planta",
+      "opcE": "Pintando, haciendo dibujitos, tocando algún instrumento",
+      "grupo": "Pregunta24"
+    },
+    {
+      "id": 25,
+      "pregunta": "Tengo una gran inclinación a:",
+      "opcA": "Ser responsable de las cuestiones financieras",
+      "opcB": "Conocer de la diversidad de la vegetación que crece en mi escuela",
+      "opcC": "Resolver algunas problemáticas personales o familiares",
+      "opcD": "Conocer enfermedades comunes",
+      "opcE": "Ser planificador de conciertos o eventos",
+      "grupo": "Pregunta25"
     }
   ]
 }

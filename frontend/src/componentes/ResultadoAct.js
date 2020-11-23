@@ -3,7 +3,6 @@ import Foto from "../imagenes/FotoPerfil.jpg";
 import FlechaAtras from "../imagenes/FlechaAtras.png";
 import Info from "../imagenes/Info.png";
 import Cookies from "universal-cookie";
-import axios from "axios";
 
 const cookies = new Cookies();
 
@@ -30,7 +29,9 @@ export default class ResultadosAct extends React.Component {
                 width="150"
               />
             </div>
-            <h5 className="text-center text-white mb-5">{cookies.get("nombre") + " " + cookies.get("apellido")}</h5>
+            <h5 className="text-center text-white mb-5">
+              {cookies.get("nombre") + " " + cookies.get("apellido")}
+            </h5>
             <div className="container">
               <div className="text-white p-3 border rounded">
                 <nav aria-label="Page navigation example">
@@ -60,21 +61,19 @@ export default class ResultadosAct extends React.Component {
                   </ul>
                 </nav>
                 <div className="collapse show multi-collapse">
-                  {cookies.get("descripcion")}
+                  {cookies.get("Desc")}
                 </div>
                 <div className="collapse multi-collapse">
-                  {cookies.get("profesion")}:
-                  <br />
-                  {cookies.get("carreras").ies}
-                  <br />
-                  {cookies.get("carreras").gt}
-                  <br />
-                  {cookies.get("carreras").cc}
+                  <p>
+                    Con base en los resultados de tu test, hemos concluido que
+                    te pueden gustar las siguientes profesiones:
+                  </p>
+                  {cookies.get("Prof")}
                 </div>
               </div>
               <div className="d-flex justify-content-end">
                 <a
-                  href="./Cuenta"
+                  href="https://futuroprofesional.vercel.app/Cuenta"
                   type="submit"
                   className="btn btn-sm btn-success m-1"
                 >

@@ -5,15 +5,33 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 export default class Header extends React.Component {
+  cerrarSesion = () => {
+    cookies.remove("id", { path: "/" });
+    cookies.remove("nombre", { path: "/" });
+    cookies.remove("apellido", { path: "/" });
+    cookies.remove("correo", { path: "/" });
+    cookies.remove("usuario", { path: "/" });
+    cookies.remove("contraseña", { path: "/" });
+    cookies.remove("Desc", { path: "/" });
+    cookies.remove("Prof", { path: "/" });
+    cookies.remove("id_test", { path: "/" });
+  };
 
-  cerrarSesion =()=>{
-    cookies.remove("id", {path: "/"});
-    cookies.remove("nombre", {path: "/"});
-    cookies.remove("apellido", {path: "/"});
-    cookies.remove("correo", {path: "/"});
-    cookies.remove("usuario", {path: "/"});
-    cookies.remove("contraseña", {path: "/"});
-  }
+  logoUrl = () => {
+    var url = window.location.href;
+    if (
+      url == "https://futuroprofesional.vercel.app/Registro" ||
+      url == "https://futuroprofesional.vercel.app/"
+    ) {
+      window.location.href = "./";
+    } else if (url == "https://futuroprofesional.vercel.app/Test") {
+      alert(
+        "Si deseas salir del test, ve al final de la pantalla y pulsa cancelar"
+      );
+    } else {
+      window.location.href = "./Cuenta";
+    }
+  };
 
   render() {
     return (
@@ -24,7 +42,10 @@ export default class Header extends React.Component {
               <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a
                   className="navbar-brand"
-                  href="./"
+                  href="#"
+                  onClick={() => {
+                    this.logoUrl();
+                  }}
                 >
                   <img className="logo" src={Logo} alt="" />
                 </a>
@@ -77,7 +98,7 @@ export default class Header extends React.Component {
                     </li>
                     <li className="nav-item">
                       <a
-                        onClick={()=>this.cerrarSesion()}
+                        onClick={() => this.cerrarSesion()}
                         id="TextNav"
                         className="nav-link"
                         href={this.props.link}

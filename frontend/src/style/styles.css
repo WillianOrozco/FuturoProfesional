@@ -10,7 +10,7 @@
 }
 
 .fondo {
-  background-image: url("../imagenes/FondoP2.jpg");
+  background-image: url("../imagenes/FondoP3.jpg");
   background-size: 100%;
 }
 
@@ -45,8 +45,17 @@
   min-height: 650px;
 }
 
-#Mensaje{
+.mensajeOculto{
   display: none;
   color: rgb(255, 31, 31);
   font-size: 15px;
+}
+
+.testOculto{
+  display: none;
+}
+
+.fondoInfo{
+  background-image: url("../imagenes/FondoP4.jpg");
+  background-size: 100%;
 }

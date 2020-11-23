@@ -10,10 +10,9 @@ export default class Main extends React.Component {
         <div className="row">
           <div className="col my-5 py-5">
             <nav className="navbar p-0 w-100 bg-transparent">
-              <a href="./Cuenta">
+              <a href="https://futuroprofesional.vercel.app/Cuenta">
                 <img src={FlechaAtras} width="38" alt="Atrás" />
               </a>
-              <h5 className="text-center text-white py-2"></h5>
               <img src={Info} width="35" alt="Info" />
             </nav>
             <div className="d-flex justify-content-center">

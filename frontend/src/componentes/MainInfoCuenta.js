@@ -20,10 +20,12 @@ export default class Main extends React.Component {
         <div className="row">
           <div className="col my-5 py-5">
             <nav className="navbar p-0 w-100 bg-transparent">
-              <a href="./Cuenta">
+              <a href="https://futuroprofesional.vercel.app/Cuenta">
                 <img src={FlechaAtras} width="38" alt="Atrás" />
               </a>
-              <h5 className="text-center text-white py-2"> Información de la Cuenta </h5>
+              <h5 className="text-center text-white py-2">
+                Información de la Cuenta
+              </h5>
               <img src={Info} width="35" alt="Info" />
             </nav>
             <div className="d-flex justify-content-center">
@@ -34,13 +36,15 @@ export default class Main extends React.Component {
                 width="150"
               />
             </div>
-            <h5 className="text-center text-white mb-5">{nombre+" "+apellido}</h5>
+            <h5 className="text-center text-white mb-5">
+              {nombre + " " + apellido}
+            </h5>
             <div className="container-sm">
-              <div className="text-white p-3 border rounded">
+              <div className="text-white p-3 border rounded fondoInfo">
                 <div className="d-flex justify-content-between">
                   <div>
                     <h5 className="colorAlerta">Nombre Completo</h5>
-                    <p>{nombre+" "+apellido}</p>
+                    <p>{nombre + " " + apellido}</p>
                   </div>
                   <a href="#popis" className="">
                     <img src={Editar} alt="Editar" width="35" className="m-3" />
@@ -67,11 +71,13 @@ export default class Main extends React.Component {
                 <div className="d-flex justify-content-between">
                   <div>
                     <h5 className="colorAlerta">Contraseña</h5>
-                    <input disabled className="bg-transparent border-0" type="password" value={contraseña}/>
+                    <input
+                      disabled
+                      className="bg-transparent border-0"
+                      type="password"
+                      value={contraseña}
+                    />
                   </div>
-                  <a href="#popis" className="">
-                    <img src={Editar} alt="Editar" width="35" className="m-3" />
-                  </a>
                 </div>
                 <h5 className="colorAlerta">Test Realizados</h5>
                 <p>1</p>

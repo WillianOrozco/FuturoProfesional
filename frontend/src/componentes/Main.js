@@ -65,26 +65,26 @@ export default class Main extends React.Component {
       });
   };
 
-  obtenerDatos = async () => {
-    await axios
-      .get(urlTest, {params: {id_usuario: cookies.get("id")}})
-      .then((res) => {
-        return res.data;
-      })
-      .then((res) => {
-        if(res.length>0){
-          var resp = res[0];
-          cookies.set("id_test", resp.id, { path: "/" });
-          cookies.set("descripcion", resp.descripcion, { path: "/" });
-          cookies.set("profesion", resp.profesion, { path: "/" });
-          cookies.set("carreras", resp.carreras, { path: "/" });
-        }
-          
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  //obtenerDatos = async () => {
+  //  await axios
+  //    .get(urlTest, { params: { id_usuario: cookies.get("id") } })
+  //    .then((res) => {
+  //      return res.data;
+  //    })
+  //    .then((res) => {
+  //        cookies.set("cantTests", res.length, { path: "/"});
+  //      for (let x = 0; x < res.length; x++) {
+  //        var resp = res[x];
+  //        cookies.set("id_test"+x, resp.id, { path: "/" });
+  //        cookies.set("fecha"+x, resp.fecha, { path: "/" });
+  //        cookies.set("descripcion"+x, resp.descripcion, { path: "/" });
+  //        cookies.set("profesion"+x, resp.profesion, { path: "/" });
+  //      }
+  //    })
+  //    .catch((error) => {
+  //      console.log(error);
+  //    });
+  //};
 
   render() {
     return (
@@ -122,7 +122,7 @@ export default class Main extends React.Component {
                   />
                 </div>
                 <div>
-                  <p id="Mensaje">Usuario o contraseña incorrectos</p>
+                  <p id="Mensaje" className="mensajeOculto">Usuario o contraseña incorrectos</p>
                 </div>
                 <div className="d-flex justify-content-between pt-2">
                   <div className="">
@@ -169,8 +169,9 @@ export default class Main extends React.Component {
                     <button
                       type="submit"
                       onClick={() => {
-                        this.ingresarUsuario()
-                        this.obtenerDatos()}}
+                        this.ingresarUsuario();
+  //                      this.obtenerDatos();
+                      }}
                       className="btn btn-sm btn-success m-1"
                     >
                       Submit

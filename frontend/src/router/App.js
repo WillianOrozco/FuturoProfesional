@@ -24,7 +24,7 @@ const App = () => {
         <Route exact path="/Cuenta" component={Cuenta} />
         <Route exact path="/InfoCuenta" component={InfoCuenta} />
         <Route exact path="/Resultados_Anteriores" component={PreResultados} />
-        <Route exact path="/Resultados_Anteriores/Test_1" component={PRTest} />
+        <Route exact path="/Resultados_Anteriores/Test" component={PRTest} />
         <Route exact path="/Test" component={Test} />
         <Route exact path="/Resultado" component={Resultado} />
         <Route exact path="/Configuración" component={Configuración} />
